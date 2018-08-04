@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class WebDemoApplication {
 
 	public static void main(String[] args) {
+		//启动了springboot程序，启动spring容器，启动内嵌的tomcat
 		SpringApplication.run(WebDemoApplication.class, args);
 	}
 }
