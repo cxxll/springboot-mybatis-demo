@@ -1,0 +1,20 @@
+package com.cxl.springboot.controller;
+
+
+import com.cxl.springboot.model.User;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MVCController {
+
+
+    @RequestMapping("/boot/getUser")
+    public Object  getUser(){
+        User user = new User();
+        user.setId(100);
+        user.setName("测试");
+
+        return user;
+    }
+}
