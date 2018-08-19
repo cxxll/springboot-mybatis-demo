@@ -14,7 +14,7 @@ public class MVCController {
         User user = new User();
         user.setId(100);
         user.setName("测试");
-
+        user.setPassword("121212");
         return user;
     }
 }

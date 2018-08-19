@@ -13,6 +13,7 @@ public class RestfulController {
         User user = new User();
         user.setId(3);
         user.setName("123333");
+        user.setPassword("121212");
         return user;
     }
 

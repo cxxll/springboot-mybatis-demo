@@ -55,10 +55,12 @@
 		<!--  servlet依赖的jar包end-->
 
 		<!--&lt;!&ndash;  jsp依赖jar包start&ndash;&gt;-->
-		<!--<dependency>-->
-			<!--<groupId>javax.servlet.jsp</groupId>-->
-			<!--<artifactId>javax.servlet.jsp-api</artifactId>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
 		<!--&lt;!&ndash;  jsp依赖jar包end&ndash;&gt;-->
 
 		<!-- jstl标签依赖jar包start -->
@@ -80,18 +82,45 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>1.3.1</version>
 		</dependency>
+		<!-- 加入阿里连接池-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.9</version>
+		</dependency>
+
+         <!-- shiro与spring整合依赖-->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring </artifactId>
+			<version>1.4.0</version>
+		</dependency>
 
 		<!-- springboot 开发自动热部署t-->
 		<dependency>
-			<groupId>org,springframework.boot</groupId>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-			<optional>true</optional>
+			<version>2.0.4.RELEASE</version>
 		</dependency>
+
 
 		<!--  MySQL 的jdbc驱动包  -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<!-- 导入thymeleaf依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<!-- thymeleal对shiro的扩展坐标 -->
+		<dependency>
+			<groupId>com.github.theborakompanioni</groupId>
+			<artifactId>thymeleaf-extras-shiro</artifactId>
+			<version>2.0.0</version>
 		</dependency>
 	</dependencies>
 

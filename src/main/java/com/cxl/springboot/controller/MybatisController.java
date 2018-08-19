@@ -24,7 +24,7 @@ public class MybatisController {
             public void run() {
                 userService.getAllUser();
             }
-        }
+        };
 
         //多线程测试一下缓存穿透问题
         ExecutorService executorService = Executors.newFixedThreadPool(25);
